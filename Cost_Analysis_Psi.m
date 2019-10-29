@@ -4,8 +4,8 @@ function [C_vacc,C_case,DALY_time,Psi,I] = Cost_Analysis_Psi(params,H_popsize,ga
 %Conditions
 params.tmax=year;
 rho=.031;
-theta=3537.7;
-DALY=1.924;
+theta=3537.7;   % $ Cost of 1 case of Lyme Disease (Needs to be rescaled for inflation)
+DALY=1.924;     % DALY cost of 1 case of Lyme Disease (DALY currently non-functional)
 x=329.29;
 
 %Calculations

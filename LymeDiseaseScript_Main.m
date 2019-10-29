@@ -384,17 +384,17 @@ legend
 clear;
 H_pop=[80 160 750];
 year=10;
-for kk=1:length(H_pop)
+for kk=1:length(H_pop)     %% kk is determines which plot we are working on
     figure
     grid on
     gamma=[.1; .25; .5; 1];
     H_popsize=H_pop(kk);
-    for i=1:length(gamma)  
-        params=Lymeparams();
+    for i=1:length(gamma)    % i determines which line on the plot we're making 
+        params=Lymeparams(); %load model params
         [C_v,C_c,DALY,Psi,H]=Cost_Analysis_Psi(params,H_popsize,gamma(i),year);
-        C_vacc(i,:)=C_v;
-        C_case(i,:)=C_c;
-        DALY_time(i,:)=DALY;
+        C_vacc(i,:)=C_v;     % Save Vaccination Cost
+        C_case(i,:)=C_c;     % Save Lyme Disease Cost
+        DALY_time(i,:)=DALY; % Save DALY saved (currently non-functional)
         Humans(i,:)=H;
     end
     C_total=C_vacc+C_case;
