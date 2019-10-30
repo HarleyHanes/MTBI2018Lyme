@@ -456,30 +456,7 @@ for kk=1:length(H_pop)     %% kk is determines which plot we are working on
     ylabel({'Dollars',' Saved','(Year^{-1})'},'FontSize',14,'Rotation',0,'HorizontalAlignment','right')
     legend({},'FontSize',15)
 end
-        % if length(Equals)==1
-    %     plot(Equals(1),0,'s','MarkerFaceColor','k','DisplayName',['\psi= ', num2str(Equals(1))])
-    % elseif length(Equals)==2
-    %     plot(Equals(1),0,'s','MarkerFaceColor','k','DisplayName',['\psi= ', num2str(Equals(1))])
-    %     plot(Equals(2),1,'^','MarkerFaceColor','k','DisplayName',['\psi= ', num2str(Equals(2))])
-    % elseif length(Equals)==3
-    %     plot(Equals(1),0,'s','MarkerFaceColor','k','DisplayName',['\psi= ', num2str(Equals(1))])
-    %     plot(Equals(2),1,'^','MarkerFaceColor','k','DisplayName',['\psi= ', num2str(Equals(2))])
-    %     plot(Equals(3),1,'d','MarkerFaceColor','k','DisplayName',['\psi= ', num2str(Equals(3))])
-    % %    legend(['\psi= ', num2str(Equals(1))],['\psi= ', num2str(Equals(2))], ['\psi= ', num2str(Equals(3))])
-    % elseif length(Equals)==4
-    %     plot(Equals(1),0,'s','MarkerFaceColor','k','DisplayName',['\psi= ', num2str(Equals(1))])
-    %     plot(Equals(2),1,'^','MarkerFaceColor','k','DisplayName',['\psi= ', num2str(Equals(2))])
-    %     plot(Equals(3),1,'d','MarkerFaceColor','k','DisplayName',['\psi= ', num2str(Equals(3))])
-    %     plot(Equals(4),1,'o','MarkerFaceColor','k','DisplayName',['\psi= ', num2str(Equals(4))])
-    % %    legend(['\psi= ', num2str(Equals(1))],['\psi= ', num2str(Equals(2))],['\psi= ', num2str(Equals(3))],['\psi= ', num2str(Equals(4))])
-    % end
-%yyaxis right
-%plot(Psi,DALY_saved)
-%legend('\gamma=.183','\gamma=.456','\gamma=.913','\gamma=1.825')
-%title('M=50, N=1000, \beta_N=.0028, \beta_L=.0018,\beta_M=.0286'), axis([0 .006 0 7000])
-%title('10 years, H=500, M=50, N=1000, \beta_N=.0417, \beta_L=.0271,\beta_M=.4304')
-%title('10 years, H_s=200, M=50, N=1000, \beta_N=.0833, \beta_L=.0542,\beta_M=.8609')
-%axis([0 .13*365/4 -20000 200000])
+
 %%
 %Effect=Humans;
 for i=1:4

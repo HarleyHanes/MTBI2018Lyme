@@ -18,5 +18,6 @@ I=infected./1000*gamma.*rho.*H_popsize;
 C_case=theta*I;
 DALY_time=DALY*I;
 C_vacc=x*Psi;
+
 end
 
